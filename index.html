@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=MuseoModerno:wght@300&family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Electro Store | Inicio</title>
+  </head>
+
+  <body>
+    <!--Barra superior-->
+    <header>
+      <!--Aqui va el logo y nombre de la tienda-->
+      <div id="logo">
+        <a href="index.html">
+          <img src="img/logo-titulo.png" alt="logo" />
+        </a>
+      </div>
+
+      <!--Barra de búsqueda-->
+      <div id="busqueda">
+        <input type="text" placeholder="Búsqueda" id="searchBar" />
+        <input type="submit" id="buscar" />
+      </div>
+
+      <!--Menu-->
+      <div id="menu">
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="html/tienda.html">Tienda</a></li>
+            <li><a href="html/proyectos.html">Proyectos</a></li>
+            <li><a href="html/quienessomos.html">Quiénes Somos</a></li>
+            <li><a href="html/contactanos.html">Contactanos</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!--Inicio Sesión-->
+      <div id="cuenta">
+        <a href="index.html">
+          <img src="img/cuenta.png" alt="Imagen de cuenta" />
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!--Carrusel de imágenes-->
+      <section id="carrusel">
+        <div>
+          <h1>Productos Destacados</h1>
+          <img src="img/banner_electronica.jpg" alt="Imagen Electro Store" />
+        </div>
+      </section>
+
+      <!--Seccion de proyectos destacados-->
+      <section id="proyectos">
+        <h2>Proyectos Populares</h2>
+        <article class="proyecto proyecto1">
+          <a href="html/proyectoFuente.html">
+            <h3>Fuente Digital</h3>
+          </a>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/JJUzdh8e3r0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </article>
+        <article class="proyecto proyecto2">
+          <a href="html/proyectoCubo.html">
+            <h3>Cubo LED 3x3x3</h3>
+          </a>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/rw2tA0LZgwY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </article>
+        <article class="proyecto proyecto3">
+          <a href="html/proyectoSensor.html">
+            <h3>Sensor de Sonido</h3>
+          </a>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/VZXRy8zdw-w"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </article>
+      </section>
+
+      <!--Mapa de ubicacion-->
+      <section id="mapa">
+        <article>
+          <h2>¿Dónde nos encontramos?</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3543.914119651781!2d-65.59616555740585!3d-27.34715328115679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9423cf5d60f072e9%3A0xddf0748ed5607740!2sPadre%20Carlos%20Juangorena%201556%2C%20T4146%20Concepci%C3%B3n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1637283810383!5m2!1ses!2sar"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </article>
+      </section>
+
+      <!--Envío de proyectos propios-->
+      <section id="mandaProyecto">
+        <article>
+          <h2>¡Mandanos tu proyecto!</h2>
+          <form action="" method="post">
+            <div class="datos">
+              <label for="nombre_apellido">Nombre y Apellido</label>
+              <input
+                type="text"
+                placeholder="Nombre y Apellido"
+                name="nombre_apellido"
+              />
+            </div>
+            <div class="datos">
+              <label for="email">Correo Electrónico</label>
+              <input
+                type="email"
+                placeholder="Correo electrónico"
+                name="email"
+              />
+            </div>
+            <div class="datos">
+              <label for="nombre_proyecto">Nombre del proyecto</label>
+              <input
+                type="text"
+                placeholder="Nombre del proyecto"
+                name="nombre_proyecto"
+              />
+            </div>
+            <div class="descripcion">
+              <label for="descripcion">Descripción</label>
+              <textarea
+                name="descripcionproyecto"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Escribe una breve descripcion del proyecto"
+                name="descripcion"
+              ></textarea>
+            </div>
+            <div id="adjuntar">
+              <input type="file" />
+            </div>
+            <div id="limpiarProyecto">
+              <input type="reset" value="Limpiar" />
+            </div>
+            <div id="enviarProyecto">
+              <input type="submit" value="Enviar" />
+            </div>
+          </form>
+        </article>
+      </section>
+
+      <!--Registro newsletter-->
+      <section id="newsletter">
+        <img src="img/newsletter.png" alt="Newsletter" />
+        <p>Registrate a nuestro newsletter</p>
+        <form action="">
+          <input type="text" placeholder="Ingresá tu correo" id="correoNews" />
+          <input type="button" value="Enviar" id="enviarNews" />
+        </form>
+      </section>
+    </main>
+
+    <!--Footer de la página-->
+    <footer>
+      <!--Aqui va el logo y nombre de la tienda-->
+      <div id="logoFooter">
+        <img src="img/logo-titulo.png" alt="logo" />
+      </div>
+
+      <div id="redesSociales">
+        <a href="https://web.whatsapp.com/" target="_blank" class="redSocial">
+          <img src="img/whatsapp.png" alt="whatsapp" />
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" class="redSocial">
+          <img src="img/facebook.png" alt="facebook" />
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" class="redSocial">
+          <img src="img/instagram.png" alt="instagram" />
+        </a>
+        <a href="https://www.twitter.com/" target="_blank" class="redSocial">
+          <img src="img/twitter.png" alt="twitter" />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" class="redSocial">
+          <img src="img/youtube.png" alt="youtube" />
+        </a>
+      </div>
+
+      <!--Enlaces-->
+      <div id="enlaces">
+        <a href="html/condiciones.html">Condiciones</a>
+        <a href="html/ayuda.html">Ayuda</a>
+        <a href="html/quienessomos.html">Quienes Somos</a>
+        <a href="html/politica.html">Politica de Privacidad</a>
+      </div>
+
+      <!--Medios de pago-->
+      <div id="mediosPago">
+        <h3>Medios de pago</h3>
+        <a href="https://www.mercadopago.com/" target="_blank">
+          <img src="img/mercadopago.jpg" alt="mercado pago" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
