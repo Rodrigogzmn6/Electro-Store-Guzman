@@ -49,46 +49,25 @@ a {
     color: white;
 }
 
-#menu li:hover, #menu li:active {
-    transform: scale(1.25, 1.25);
-    margin-left: 1vw;
-    margin-right: 1vw;
-}
-
 /*----------MOBILE----------*/
 
 @media only screen and (min-width: 320px) {
 
     /*----------HEADER----------*/
 
-    header {
-        /*background-color: #FF6D00;*/
-        background-image: linear-gradient(#FF6D00, #263238);
-        display: flex;
-        height: 7.5vh;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-        padding-left: 3vw;
-        padding-top: 1vh;
-        padding-right: 3vw;
-        padding-bottom: 1vh;
-        margin-bottom: 2vh;
+    #logo img{
+        height: 7vh;
     }
 
-    header img {
-        height: 100%;
+    #barraNavegacion {
+        background-color: #FF6D00;
     }
 
-    #logo {
-        flex-grow: 1;
-        margin-right: 2vw;
+    #barraNavegacion li a {
+        color: white;
     }
 
-    #busqueda {
-        display: none;
-    }
-
-    #menu {
+    #busquedaFija {
         display: none;
     }
 
@@ -451,22 +430,12 @@ a {
 
     /*----------HEADER----------*/
 
-    #logo {
-        flex-grow: 0;
-    }
-
-    #menu {
+    #busquedaFija {
         display: inline-block;
-        flex-grow: 3;
-        margin-right: 2vw;
-        margin-top: auto;
-        margin-bottom: auto;
     }
 
-    #menu ul {
-        display: flex;
-        justify-content: space-evenly;
-        list-style: none;
+    #busquedaColapsable {
+        display: none;
     }
 
 
@@ -598,25 +567,12 @@ a {
 @media only screen and (min-width: 1024px) {
     /*----------HEADER----------*/
 
-    #busqueda {
-        flex-grow: 2;
-        display: flex;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-right: 2vw;
+    .navbar-collapse {
+        flex-grow: 0;
     }
 
-    #searchBar {
-        flex-grow: 3;
-        margin-right: 2%;
-        border-radius: 10px;
-        padding: 1%;
-    }
-
-    #buscar {
-        flex-grow: 1;
-        border-radius: 10px;
-        padding: 1%;
+    #barraNavegacion {
+        justify-content: space-around;
     }
 
 
