@@ -72,6 +72,12 @@ a {
         display: none;
     }
 
+    #busquedaFija button, #busquedaColapsable button {
+        background-color: #263238;
+        border-color: #FF6D00;
+        color: #FF6D00;
+    }
+
 
 
     /*----------NEWSLETTER----------*/
@@ -345,6 +351,7 @@ a {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 3vh;
+        text-align: left;
     }
 
     #texto img {
@@ -363,6 +370,7 @@ a {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 3vh;
+        text-align: left;
     }
 
     #contactoRedes p {
@@ -385,13 +393,19 @@ a {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 3vh;
+        text-align: left;
+        display: block;
     }
 
     #descripcion p{
         margin-bottom: 2vh;
     }
 
-    #descripcion img {
+    #imagenChica {
+        display: none;
+    }
+
+    #imagenGrande{
         width: 100%;
     }
 
@@ -411,6 +425,7 @@ a {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 3vh;
+        text-align: left;
     }
 
 
@@ -611,6 +626,17 @@ a {
 
     #descripcion p, #listaComponentes li {
         font-size: 4vh;
+    }
+
+    #imagenChica {
+        display: block;
+        float: left;
+        padding: 2%;
+        width: 45%;
+    }
+
+    #imagenGrande {
+        display: none;
     }
 
 
