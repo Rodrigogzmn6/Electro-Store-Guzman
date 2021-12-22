@@ -257,6 +257,44 @@ a {
 
 
 
+    /*----------MAIN CONTACTANOS----------*/
+
+    #formContacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        margin-bottom: 5%;
+    }
+
+    #formContacto form {
+        width: 80%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    #formContacto textarea {
+        border-radius: 10px;
+        padding: 2%;
+        width: 100%;
+    }
+
+    #formContacto form label, #formContacto form select, #formContacto form p, #formContacto form textarea, #formContacto form input{
+        margin: 0%;
+    }
+    
+    #formContacto .form-check-input {
+        margin-left: 10px;
+        height: 100%;
+    }
+
+    #formContacto .btn-primary {
+        background-color: #FF6D00;
+        border-color: #FF6D00;
+    }
+
+
+
     /*----------MAIN AYUDA/POLITICA/CONDICIONES----------*/
 
     #texto {
@@ -293,29 +331,6 @@ a {
     #contactoRedes img {
         height: 5vh;
         margin-right: 10px;
-    }
-
-
-
-    /*----------CONTACTANOS----------*/
-
-    #formContacto {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 7%;
-    }
-    
-    #formContacto label, #formContacto textarea {
-        display: block;
-    }
-    
-    #formContacto fieldset {
-        padding: 3%;
-    }
-    
-    #formContacto label, #formContacto select, #formContacto p, #formContacto textarea, #formContacto input {
-        margin: 2%;
     }
 
 
@@ -542,18 +557,36 @@ a {
 
 
 
-    /*----------MAIN AYUDA/POLITICA/CONDICIONES----------*/
+    /*----------MAIN CONTACTANOS----------*/
 
-    #texto p, #contactoRedes p {
-        font-size: 5vh;
+    #formContacto form {
+        width: 60%;
+    }
+
+    #formContacto form div {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    #formContacto label {
+        width: 20%;
+    }
+
+    #formContacto .form-check-label {
+        width: 100%;
+    }
+
+    #formContacto .form-check {
+        padding: 0%;
     }
 
 
 
-    /*----------CONTACTANOS----------*/
+    /*----------MAIN AYUDA/POLITICA/CONDICIONES----------*/
 
-    #formContacto {
-        width: 50%;
+    #texto p, #contactoRedes p {
+        font-size: 5vh;
     }
 
 
@@ -674,9 +707,9 @@ a {
 
 
 
-    /*----------CONTACTANOS----------*/
+    /*----------MAIN CONTACTANOS----------*/
 
-    #formContacto {
-        width: 40%;
+    #formContacto form {
+        width: 50%;
     }
 }

@@ -16,45 +16,54 @@
 </head>
 
 <body>
-
     <!--Barra superior-->
     <header>
-
-        <!--Aqui va el logo y nombre de la tienda-->
-        <div id="logo">
-            <a href="../index.html">
-                <img src="../img/logo-titulo.png" alt="logo">
-            </a>
+      
+      <nav class="navbar navbar-expand-lg navbar-light" id="barraNavegacion">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#" id="logo">
+          <img src="../img/logo-titulo.png" alt="logo">
+        </a>
+        
+        <!-- Barra de busqueda fija -->
+        <form class="form-inline" action="/action_page.php" id="busquedaFija">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      
+        <!-- Boton para colapsar el mennu -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" id="botonMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Links y barra de busqueda colapsables -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <form class="form-inline" action="/action_page.php" id="busquedaColapsable">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="proyectos.html">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quienessomos.html">Quienes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactanos.html">Contactanos</a>
+            </li>
+          </ul>
         </div>
-
-        <!--Barra de búsqueda-->
-        <div id="busqueda">
-            <input type="text" placeholder="Búsqueda" id="searchBar">
-            <input type="submit" id="buscar">
-        </div>
-
-        <!--Menu-->
-        <div id="menu">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="tienda.html">Tienda</a></li>
-                    <li><a href="proyectos.html">Proyectos</a></li>
-                    <li><a href="quienessomos.html">Quiénes Somos</a></li>
-                    <li><a href="contactanos.html">Contactanos</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <!--Inicio Sesión-->
-        <div id="cuenta">
-            <a href="../index.html">
-                <img src="../img/cuenta.png" alt="Imagen de cuenta">
-            </a>
-        </div>
-
+      </nav>
+  
     </header>
-
+  
     <main>
         <!--Vumetro-->
         <section id ="descripcion">
@@ -94,64 +103,79 @@
         </section>
 
         <!--Registro newsletter-->
-        <section id="newsletter">
-            <img src="../img/newsletter.png" alt="Newsletter">
-            <p>Registrate a nuestro newsletter</p>
-            <form action="">
-                <input type="text" placeholder="Ingresá tu correo" id="correoNews">
-                <input type="button" value="Enviar" id="enviarNews">
-            </form>
+        <section>
+          <div class="container-fluid align-items-center" id="newsletter">
+            <div class="row align-items-center">
+              <div class="align-items-center col-3 col-md-2" id="imagenSobre">
+                <img src="../img/newsletter.png" alt="Newsletter"/>
+              </div>
+              <div class="d-none d-md-block col-md-5">
+                <p>Registrate a nuestro newsletter</p>
+              </div>
+              <div class="col-9 col-md-5">
+                <form action="">
+                  <input type="text" placeholder="Ingresá tu correo" id="correoNews" />
+                  <input type="button" value="Enviar" id="enviarNews" />
+                </form>
+              </div>
+            </div>
+          </div>
         </section>
-    </main>
-    <!--Footer de la página-->
-    <footer>
-
+        
+      </main>
+    
+      <!--Footer de la página-->
+      <footer>
         <!--Aqui va el logo y nombre de la tienda-->
         <div id="logoFooter">
-            <img src="../img/logo-titulo.png" alt="logo">
+          <img src="../img/logo-titulo.png" alt="logo" />
         </div>
-
+    
         <div id="redesSociales">
-            <a href="https://web.whatsapp.com/" target="_blank" class="redSocial"><img src="../img/whatsapp.png"
-                    alt="whatsapp"></a>
-            <a href="https://www.facebook.com/" target="_blank" class="redSocial"><img src="../img/facebook.png"
-                    alt="facebook"></a>
-            <a href="https://www.instagram.com/" target="_blank" class="redSocial"><img src="../img/instagram.png"
-                    alt="instagram"></a>
-            <a href="https://www.twitter.com/" target="_blank" class="redSocial"><img src="../img/twitter.png"
-                    alt="twitter"></a>
-            <a href="https://www.youtube.com/" target="_blank" class="redSocial"><img src="../img/youtube.png"
-                    alt="youtube"></a>
+          <a href="https://web.whatsapp.com/" target="_blank" class="redSocial">
+            <img src="../img/whatsapp.png" alt="whatsapp" />
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" class="redSocial">
+            <img src="../img/facebook.png" alt="facebook" />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" class="redSocial">
+            <img src="../img/instagram.png" alt="instagram" />
+          </a>
+          <a href="https://www.twitter.com/" target="_blank" class="redSocial">
+            <img src="../img/twitter.png" alt="twitter" />
+          </a>
+          <a href="https://www.youtube.com/" target="_blank" class="redSocial">
+            <img src="../img/youtube.png" alt="youtube" />
+          </a>
         </div>
-
+    
         <!--Enlaces-->
         <div id="enlaces">
-            <a href="condiciones.html">Condiciones</a>
-            <a href="ayuda.html">Ayuda</a>
-            <a href="quienessomos.html">Quienes Somos</a>
-            <a href="politica.html">Politica de Privacidad</a>
+          <a href="condiciones.html">Condiciones</a>
+          <a href="ayuda.html">Ayuda</a>
+          <a href="quienessomos.html">Quienes Somos</a>
+          <a href="politica.html">Politica de Privacidad</a>
         </div>
-
+    
         <!--Medios de pago-->
         <div id="mediosPago">
-            <h3>Medios de pago</h3>
-            <a href="https://www.mercadopago.com/" target="_blank">
-                <img src="../img/mercadopago.jpg" alt="mercado pago">
-            </a>
+          <h3>Medios de pago</h3>
+          <a href="https://www.mercadopago.com/" target="_blank">
+            <img src="../img/mercadopago.jpg" alt="mercado pago" />
+          </a>
         </div>
-
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
-      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
-      crossorigin="anonymous"></script>
-  
-  </body>
-
+      </footer>
+    
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+    
+    </body>
+    
 </html>
