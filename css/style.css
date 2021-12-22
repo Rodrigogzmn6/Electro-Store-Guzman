@@ -76,46 +76,29 @@ a {
     /*----------NEWSLETTER----------*/
 
     #newsletter {
-        background-image: linear-gradient(#FF6D00, #263238);
+        background-color: #FF6D00;
         height: 10vh;
-        width: auto;
-        display: flex;
         border-radius: 15px;
-        padding-left: 3vw;
-        padding-top: 1vh;
-        padding-right: 3vw;
-        padding-bottom: 1vh;
-        justify-content: center;
-    }
-
-    #newsletter * {
-        margin-top: auto;
-        margin-bottom: auto;
     }
 
     #newsletter img {
+        width: 100%;
+    }
+
+    #newsletter .row {
         height: 100%;
-        margin-right: 5vw;
     }
-
-    #newsletter p {
-        display: none;
-    }
-
-    #newsletter form {
-        flex-grow: 2;
-        display: flex;
-    }
-
+    
     #correoNews {
         border-radius: 10px;
-        padding: 1%;
-        flex-grow: 1;
+        padding: 0%;
+        width: 70%;
     }
-
+    
     #enviarNews {
         border-radius: 10px;
-        padding: 1%;
+        padding: 0%;
+        width: 25%;
     }
 
 
@@ -185,7 +168,6 @@ a {
 
 
     #proyectos {
-        padding: 2%;
         display: grid;
         grid-template-areas: 
         "h2 h2"
@@ -199,6 +181,18 @@ a {
         grid-area: h2;
     }
 
+    .proyecto iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .proyecto {
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     .proyecto1 {
         grid-area: proyecto1;
     }
@@ -210,18 +204,17 @@ a {
     .proyecto3 {
         display: none;
     }
-
-    .proyecto iframe {
-        width: 100%;
-        height: auto;
-    }
     
 
+    #mapa {
+        text-align: center;
+    }
 
     #mapa iframe {
         padding: 5%;
-        padding-top: 2%;
         width: 90%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
 
@@ -440,16 +433,7 @@ a {
 
 
 
-    /*----------NEWSLETTER----------*/
-
-    #newsletter img {
-        margin-right: 2vw;
-    }
-
-    #newsletter p {
-        display: inline-block;
-        margin-right: 2vw;
-    }
+    
 
 
 
@@ -577,18 +561,7 @@ a {
 
 
 
-    /*----------NEWSLETTER----------*/
-
-    #newsletter {
-        columns: 1/3;
-    }
-
-    #newsletter p {
-        display: inline-block;
-        margin-right: 5vw;
-        font-size: 5vh;
-        color: #263238;
-    }
+    
 
 
 

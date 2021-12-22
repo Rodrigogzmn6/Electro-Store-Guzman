@@ -65,11 +65,39 @@
   </header>
 
   <main>
+    <h1>Productos Destacados</h1>
     <!--Carrusel de imágenes-->
     <section id="carrusel">
-      <div>
-        <h1>Productos Destacados</h1>
-        <img src="img/banner_electronica.jpg" alt="Imagen Electro Store" />
+      <div class="carousel slide" data-ride="carousel">
+
+        <!-- Indicadores -->
+        <ul id="demo" class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+      
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/banner_arduino.jpg" alt="Arduino">
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner_raspberry.jpg" alt="Raspberry Pi">
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner_electronica.jpg" alt="Electronica">
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      
       </div>
     </section>
 
@@ -151,14 +179,25 @@
     </section>
 
     <!--Registro newsletter-->
-    <section id="newsletter">
-      <img src="img/newsletter.png" alt="Newsletter" />
-      <p>Registrate a nuestro newsletter</p>
-      <form action="">
-        <input type="text" placeholder="Ingresá tu correo" id="correoNews" />
-        <input type="button" value="Enviar" id="enviarNews" />
-      </form>
+    <section>
+      <div class="container-fluid align-items-center" id="newsletter">
+      <div class="row align-items-center">
+        <div class="col-3">
+          <img src="../img/newsletter.png" alt="Newsletter"/>
+        </div>
+        <div class="d-none d-md-block">
+          <p>Registrate a nuestro newsletter</p>
+        </div>
+        <div class="col-9">
+          <form action="">
+            <input type="text" placeholder="Ingresá tu correo" id="correoNews" />
+            <input type="button" value="Enviar" id="enviarNews" />
+          </form>
+        </div>
+      </div>
+    </div>
     </section>
+    
   </main>
 
   <!--Footer de la página-->
