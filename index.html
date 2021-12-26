@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="img/favicon.png" />
     <link
       rel="stylesheet"
@@ -127,7 +128,7 @@
       <section id="proyectos" class="container-fluid">
         <h2>Proyectos Populares</h2>
         <div class="row">
-          <article class="proyecto proyecto1 col-6 col-lg-4">
+          <article class="proyecto proyecto1 col-6 col-lg-4" data-aos="flip-up" data-aos-duration="1500">
             <a href="html/proyectoFuente.html">
               <h3>Fuente Digital</h3>
             </a>
@@ -143,7 +144,7 @@
               ></iframe>
             </div>
           </article>
-          <article class="proyecto proyecto2 col-6 col-lg-4">
+          <article class="proyecto proyecto2 col-6 col-lg-4" data-aos="flip-up" data-aos-duration="1500">
             <a href="html/proyectoCubo.html">
               <h3>Cubo LED 3x3x3</h3>
             </a>
@@ -159,7 +160,7 @@
               ></iframe>
             </div>
           </article>
-          <article class="proyecto proyecto3 d-none d-lg-block col-lg-4">
+          <article class="proyecto proyecto3 d-none d-lg-block col-lg-4" data-aos="flip-up" data-aos-duration="1500">
             <a href="html/proyectoSensor.html">
               <h3>Sensor de Sonido</h3>
             </a>
@@ -180,7 +181,7 @@
 
       <!--Mapa de ubicacion-->
       <section class="container-fluid row" id="ubicacionProyecto">
-        <article id="mapa" class="col-12 col-md-6">
+        <article id="mapa" class="col-12 col-md-6" data-aos="fade-right" data-aos-duration="1500">
           <h2>¿Dónde nos encontramos?</h2>
           <div class="embed-responsive embed-responsive-4by3 d-md-none">
             <iframe
@@ -205,7 +206,7 @@
         </article>
 
       <!--Envío de proyectos propios-->
-        <article id="mandaProyecto" class="col-12 col-md-6">
+        <article id="mandaProyecto" class="col-12 col-md-6" data-aos="fade-left" data-aos-duration="1500">
           <h2>¡Mandanos tu proyecto!</h2>
           <form action="" method="post">
             <div class="datos">
@@ -341,6 +342,10 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
