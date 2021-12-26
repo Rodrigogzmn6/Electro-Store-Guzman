@@ -16,55 +16,75 @@
 </head>
 
 <body>
-    <!--Barra superior-->
-    <header>
-      
-      <nav class="navbar navbar-expand-lg navbar-light" id="barraNavegacion">
-        <!-- Logo -->
-        <a class="navbar-brand" href="#" id="logo">
-          <img src="../img/logo-titulo.png" alt="logo">
-        </a>
-        
-        <!-- Barra de busqueda fija -->
-        <form class="form-inline" action="/action_page.php" id="busquedaFija">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-success" type="submit">Search</button>
+  <!--Barra superior-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light" id="barraNavegacion">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#" id="logo">
+        <img src="../img/logo-titulo.png" alt="logo" />
+      </a>
+
+      <!-- Barra de busqueda fija -->
+      <form class="form-inline" action="/action_page.php" id="busquedaFija">
+        <input
+          class="form-control mr-sm-2"
+          type="text"
+          placeholder="Search"
+        />
+        <button class="btn btn-success" type="submit">Search</button>
+      </form>
+
+      <!-- Boton para colapsar el mennu -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+        id="botonMenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links y barra de busqueda colapsables -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <form
+          class="form-inline"
+          action="/action_page.php"
+          id="busquedaColapsable"
+        >
+          <input
+            class="form-control mr-sm-2 col-9 col-sm-5"
+            type="text"
+            placeholder="Search"
+          />
+          <button class="btn btn-success col-3 col-sm-3" type="submit">
+            Search
+          </button>
         </form>
-      
-        <!-- Boton para colapsar el mennu -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" id="botonMenu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <!-- Links y barra de busqueda colapsables -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <form class="form-inline" action="/action_page.php" id="busquedaColapsable">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-success" type="submit">Search</button>
-          </form>
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tienda.html">Tienda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="proyectos.html">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="quienessomos.html">Quienes Somos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contactanos.html">Contactanos</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-  
-    </header>
-  
-    <main>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tienda.html">Tienda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="proyectos.html">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quienessomos.html"
+              >Quienes Somos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactanos.html">Contactanos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
         <!--Sensor-->
         <section id ="descripcion">
             <h2>Sensor de Sonido o Aplauso</h2>
@@ -104,79 +124,105 @@
         </section>
 
         <!--Registro newsletter-->
-        <section>
-          <div class="container-fluid align-items-center" id="newsletter">
+        <section id="newsletter">
+          <div class="container-fluid align-items-center">
             <div class="row align-items-center">
-              <div class="align-items-center col-3 col-md-2" id="imagenSobre">
-                <img src="../img/newsletter.png" alt="Newsletter"/>
+              <div
+                class="align-items-center col-3 col-md-2 col-lg-1"
+                id="imagenSobre"
+              >
+                <img src="../img/newsletter.png" alt="Newsletter" />
               </div>
-              <div class="d-none d-md-block col-md-5">
+              <div class="d-none d-md-block col-md-5 col-lg-4">
                 <p>Registrate a nuestro newsletter</p>
               </div>
-              <div class="col-9 col-md-5">
+              <div class="col-9 col-md-5 col-lg-7">
                 <form action="">
-                  <input type="text" placeholder="Ingresá tu correo" id="correoNews" />
-                  <input type="button" value="Enviar" id="enviarNews" />
+                  <input
+                    type="text"
+                    class="col-7"
+                    placeholder="Ingresá tu correo"
+                    id="correoNews"
+                  />
+                  <input
+                    type="button"
+                    value="Enviar"
+                    class="col-4"
+                    id="enviarNews"
+                  />
                 </form>
               </div>
             </div>
           </div>
         </section>
-        
       </main>
-    
+  
       <!--Footer de la página-->
-      <footer>
-        <!--Aqui va el logo y nombre de la tienda-->
-        <div id="logoFooter">
-          <img src="../img/logo-titulo.png" alt="logo" />
-        </div>
-    
-        <div id="redesSociales">
-          <a href="https://web.whatsapp.com/" target="_blank" class="redSocial">
-            <img src="../img/whatsapp.png" alt="whatsapp" />
-          </a>
-          <a href="https://www.facebook.com/" target="_blank" class="redSocial">
-            <img src="../img/facebook.png" alt="facebook" />
-          </a>
-          <a href="https://www.instagram.com/" target="_blank" class="redSocial">
-            <img src="../img/instagram.png" alt="instagram" />
-          </a>
-          <a href="https://www.twitter.com/" target="_blank" class="redSocial">
-            <img src="../img/twitter.png" alt="twitter" />
-          </a>
-          <a href="https://www.youtube.com/" target="_blank" class="redSocial">
-            <img src="../img/youtube.png" alt="youtube" />
-          </a>
-        </div>
-    
-        <!--Enlaces-->
-        <div id="enlaces">
-          <a href="condiciones.html">Condiciones</a>
-          <a href="ayuda.html">Ayuda</a>
-          <a href="quienessomos.html">Quienes Somos</a>
-          <a href="politica.html">Politica de Privacidad</a>
-        </div>
-    
-        <!--Medios de pago-->
-        <div id="mediosPago">
-          <h3>Medios de pago</h3>
-          <a href="https://www.mercadopago.com/" target="_blank">
-            <img src="../img/mercadopago.jpg" alt="mercado pago" />
-          </a>
+      <footer class="container-fluid">
+        <div class="row">
+          <div class="col-6 col-md-4">
+            <!--Aqui va el logo y nombre de la tienda-->
+            <div id="logoFooter">
+              <img src="../img/logo-titulo.png" alt="logo" />
+            </div>
+  
+            <div id="redesSociales">
+              <a href="https://web.whatsapp.com/" target="_blank" class="col">
+                <img src="../img/whatsapp.png" alt="whatsapp" />
+              </a>
+              <a href="https://www.facebook.com/" target="_blank" class="col">
+                <img src="../img/facebook.png" alt="facebook" />
+              </a>
+              <a href="https://www.instagram.com/" target="_blank" class="col">
+                <img src="../img/instagram.png" alt="instagram" />
+              </a>
+              <a href="https://www.twitter.com/" target="_blank" class="col">
+                <img src="../img/twitter.png" alt="twitter" />
+              </a>
+              <a href="https://www.youtube.com/" target="_blank" class="col">
+                <img src="../img/youtube.png" alt="youtube" />
+              </a>
+            </div>
+          </div>
+  
+          <div class="col-6 col-md-4">
+            <h3>Enlaces</h3>
+            <!--Enlaces-->
+            <div id="enlaces">
+              <a href="condiciones.html" class="row">Condiciones</a>
+              <a href="ayuda.html" class="row">Ayuda</a>
+              <a href="quienessomos.html" class="row">Quienes Somos</a>
+              <a href="politica.html" class="row">Politica de Privacidad</a>
+            </div>
+          </div>
+  
+          <div class="d-none d-md-block col-md-4">
+            <!--Medios de pago-->
+            <div class="" id="mediosPago">
+              <h3>Medios de pago</h3>
+              <a href="https://www.mercadopago.com/" target="_blank">
+                <img src="../img/mercadopago.jpg" alt="mercado pago" />
+              </a>
+            </div>
+          </div>
         </div>
       </footer>
-    
-      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+  
+      <script
+        src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
-        crossorigin="anonymous"></script>
-    
+        crossorigin="anonymous"
+      ></script>
     </body>
-    
-</html>
+  </html>
+  

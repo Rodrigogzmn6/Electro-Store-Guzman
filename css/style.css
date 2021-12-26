@@ -395,7 +395,26 @@ a {
 }
 
 @media only screen and (min-width: 768px) {
+    
+    /*----------HEADER----------*/
 
+    .navbar-expand-lg {
+        justify-content: space-between;
+    }
+
+    #busquedaFija {
+        display: block;
+    }
+
+    #busquedaColapsable {
+        display: none;
+    }
+
+    #collapsibleNavbar {
+        flex-grow: 0;
+    }
+
+    
 }
 
 @media only screen and (min-width: 992px) {
