@@ -1,0 +1,56 @@
+@media only screen and (min-width: 0px) {
+    #descripcion {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3vh;
+        text-align: left;
+        display: block;
+        p{
+            margin-bottom: 2vh;
+        }
+    }
+
+    #imagenChica {
+        display: none;
+    }
+
+    #imagenGrande{
+        width: 100%;
+    }
+
+    #tutorial {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3vh;
+        iframe {
+            width: 100%;
+        }
+    }
+
+    #listaComponentes {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3vh;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 768px) {    
+    #descripcion p, #listaComponentes li {
+        font-size: 4vh;
+    }
+
+    #imagenChica {
+        display: block;
+        float: left;
+        padding: 2%;
+        width: 45%;
+    }
+
+    #imagenGrande {
+        display: none;
+    }
+}

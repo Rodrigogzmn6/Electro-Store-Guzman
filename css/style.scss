@@ -1,0 +1,46 @@
+/*
+FUENTES
+
+'MuseoModerno', cursive;
+'Lato', sans-serif;
+'Noto Sans', sans-serif;
+*/
+
+
+
+* {
+    margin: 0%;
+    border: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: #263238;
+    font-family: 'Noto Sans', sans-serif;
+    background-image: url(../img/bipolar.png);
+    background-size: 10vh;
+    color: white;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    font-family: 'MuseoModerno', cursive;
+    color: #FF6D00;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@import "_header";
+@import "_newsletter";
+@import "_footer";
+@import "_index";
+@import "_tienda";
+@import "_proyectos";
+@import "_especifico";
+@import "_quienesSomos";
+@import "_contactanos";
+@import "_texto";

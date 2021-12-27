@@ -5,466 +5,438 @@ FUENTES
 'Lato', sans-serif;
 'Noto Sans', sans-serif;
 */
-
-
-
 * {
-    margin: 0%;
-    border: 0%;
-    padding: 0%;
+  margin: 0%;
+  border: 0%;
+  padding: 0%;
 }
 
 body {
-    background-color: #263238;
-    font-family: 'Noto Sans', sans-serif;
-    background-image: url(../img/bipolar.png);
-    background-size: 10vh;
-    color: white;
-    text-align: center;
+  background-color: #263238;
+  font-family: 'Noto Sans', sans-serif;
+  background-image: url(../img/bipolar.png);
+  background-size: 10vh;
+  color: white;
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-    font-family: 'MuseoModerno', cursive;
-    color: #FF6D00;
+  text-align: center;
+  font-family: 'MuseoModerno', cursive;
+  color: #FF6D00;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
-/*----------MOBILE----------*/
-
 @media only screen and (min-width: 0px) {
-
-    /*----------HEADER----------*/
-
-    #logo img{
-        height: 7vh;
-    }
-
-    #barraNavegacion {
-        background-color: #FF6D00;
-    }
-
-    #barraNavegacion li a {
-        color: white;
-        text-align: left;
-    }
-
-    #busquedaFija {
-        display: none;
-    }
-
-    #busquedaFija button, #busquedaColapsable button {
-        background-color: #263238;
-        border-color: #FF6D00;
-        color: #FF6D00;
-    }
-
-
-
-    /*----------NEWSLETTER----------*/
-
-    #newsletter {
-        background-color: #FF6D00;
-        border-radius: 15px;
-        height: 10vh;
-    }
-
-    #imagenSobre {
-        height: 10vh;
-    }
-
-    #imagenSobre img {
-        height: 100%;
-    }
-
-    #newsletter p {
-        color: #263238;
-        margin: 0%;
-        font-size: larger;
-    }
-
-    #newsletter form input {
-        padding: 0;
-        margin: 0;
-        border-radius: 10px;
-    }
-
-
-
-    /*----------FOOTER----------*/
-
-    #logoFooter {
-        margin-bottom: 3vh;
-    }
-
-    #logoFooter img {
-        height: 7vh;
-    }
-
-    #redesSociales a {
-        padding: 0%;
-    }
-
-    #redesSociales img {
-        height: 4vh;
-    }
-
-    #enlaces a {
-        justify-content: center;
-    }
-
-
-
-    /*----------MAIN INDEX----------*/
-
-    /*Carrusel*/
-
-    #carrusel {
-        width: 100%;
-        margin-bottom: 5vh;
-    }
-    
-    #carrusel img {
-        width: 100%;
-    }
-
-
-    /*Proyectos destacados*/
-
-    #proyectos {
-        margin-bottom: 5vh;
-    }
-    #proyectos article {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    
-
-    /*Mapa y proyecto*/
-
-    #ubicacionProyecto{
-        margin: 0%;
-        margin-bottom: 5vh;
-    }
-
-
-
-    /*Mandar proyectos*/
-    
-    #mandaProyecto {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 3vh;
-        text-align: left;
-    }
-
-    #mandaProyecto form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #mandaProyecto div {
-        margin-bottom: 2%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #limpiarProyecto, #enviarProyecto {
-        width: 30%;
-    }
-
-    #limpiarProyecto input, #enviarProyecto input{
-        width: 100%;
-    }
-
-
-
-    /*----------TIENDA----------*/
-
-    #tienda {
-        margin-bottom: 5vh;
-    }
-
-    #tienda img {
-        width: 100%;
-    }
-
-    #tienda .producto {
-        border: 1px solid #FF6D00;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-shrink: 1;
-        padding: 20px;
-        margin: 0;
-    }
-
-
-
-    /*----------PROYECTOS----------*/
-
-    #listaProyectos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 5vh;
-    }
-
-    #acordeonProyectos {
-        text-align: left;
-        width: 80%;
-    }
-
-    #acordeonProyectos .card {
-        border-color: #26323800;
-        border-radius: 10px;
-        background-color: #26323800;
-    }
-
-    #acordeonProyectos .card-header {
-        background-color: #FF6D00;
-        border-color: #FF6D00;
-        border-radius: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #acordeonProyectos .card-header .card-link {
-        display: flex;
-        align-items: center;
-    }
-
-    #acordeonProyectos a {
-        color: #263238;
-    }
-
-    #listaProyectos ol li {
-        list-style: none;
-    }
-
-
-
-    /*----------PROYECTO ESPECIFICO----------*/
-
-    #descripcion {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 3vh;
-        text-align: left;
-        display: block;
-    }
-
-    #descripcion p{
-        margin-bottom: 2vh;
-    }
-
-    #imagenChica {
-        display: none;
-    }
-
-    #imagenGrande{
-        width: 100%;
-    }
-
-    #tutorial {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 3vh;
-    }
-
-    #tutorial iframe {
-        width: 100%;
-    }
-
-    #listaComponentes {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 3vh;
-        text-align: left;
-    }
-
-
-
-    /*----------MAIN CONTACTANOS----------*/
-
-    #formContacto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: left;
-        margin-bottom: 5%;
-    }
-
-    #formContacto form {
-        width: 80%;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    #formContacto textarea {
-        border-radius: 10px;
-        padding: 2%;
-        width: 100%;
-    }
-
-    #formContacto form label, #formContacto form select, #formContacto form p, #formContacto form textarea, #formContacto form input{
-        margin: 0%;
-    }
-    
-    #formContacto .form-check-input {
-        margin-left: 10px;
-        height: 100%;
-    }
-
-    #formContacto .btn-primary {
-        background-color: #FF6D00;
-        border-color: #FF6D00;
-    }
-
-
-
-    /*----------MAIN AYUDA/POLITICA/CONDICIONES----------*/
-
-    #texto {
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 3vh;
-        text-align: left;
-    }
-
-    #texto img {
-        width: 100%;
-        margin-top: 2vh;
-    }
-
-
-
-    /*----------QUIENES SOMOS----------*/
-
-    #contactoRedes {
-        display: flex;
-        flex-wrap: wrap;
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 3vh;
-        text-align: left;
-    }
-
-    #contactoRedes p {
-        align-self: stretch;
-        margin-bottom: 2vh;
-        width: 100%;
-    }
-
-    #contactoRedes img {
-        height: 5vh;
-        margin-right: 10px;
-    }
+  #logo img {
+    height: 7vh;
+  }
+  #barraNavegacion {
+    background-color: #FF6D00;
+  }
+  #barraNavegacion li a {
+    color: white;
+    text-align: left;
+  }
+  #busquedaFija {
+    display: none;
+  }
+  #busquedaFija button, #busquedaColapsable button {
+    background-color: #263238;
+    border-color: #FF6D00;
+    color: #FF6D00;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    
-    /*----------HEADER----------*/
-
-    .navbar-expand-lg {
-        justify-content: space-between;
-    }
-
-    #busquedaFija {
-        display: block;
-    }
-
-    #busquedaColapsable {
-        display: none;
-    }
-
-    #collapsibleNavbar {
-        flex-grow: 0;
-    }
-    
-
-
-    /*----------FOOTER----------*/
-
-    #logoFooter img {
-        height: 12vh;
-    }
-
-    #redesSociales img {
-        height: 6vh;
-    }
-
-    #enlaces a {
-        margin-bottom: 4vh;
-    }
-    
-    
-    
-    /*----------PROYECTO ESPECIFICO----------*/
-
-    #descripcion p, #listaComponentes li {
-        font-size: 4vh;
-    }
-
-    #imagenChica {
-        display: block;
-        float: left;
-        padding: 2%;
-        width: 45%;
-    }
-
-    #imagenGrande {
-        display: none;
-    }
+  .navbar-expand-lg {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #busquedaFija {
+    display: block;
+  }
+  #busquedaColapsable {
+    display: none;
+  }
+  #collapsibleNavbar {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+  }
 }
 
 @media only screen and (min-width: 992px) {
-
-    /*--------HEADER----------*/
-
-    #collapsibleNavbar a {
-        margin: 0px 0.5vw;
-        transition: all 1s;
-    }
-
-    #collapsibleNavbar a:hover {
-        transform: scale(1.5, 1.5);
-    }
-
-
-    /*--------FOOTER----------*/
-
-    #enlaces a {
-        transition: all 1s;
-    }
-
-    #enlaces a:hover {
-        transform: scale(1.5, 1.5);
-    }
-
-    
-
-    /*----------MAIN CONTACTANOS----------*/
-
-    #formContacto form {
-        width: 50%;
-    }
+  /*--------HEADER----------*/
+  #collapsibleNavbar a {
+    margin: 0px 0.5vw;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  #collapsibleNavbar a:hover {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+  }
 }
 
-@media only screen and (min-width: 1200px) {
-    
+@media only screen and (min-width: 0px) {
+  /*----------NEWSLETTER----------*/
+  #newsletter {
+    background-color: #FF6D00;
+    border-radius: 15px;
+    height: 10vh;
+  }
+  #newsletter p {
+    color: #263238;
+    margin: 0%;
+    font-size: larger;
+  }
+  #newsletter form input {
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+  }
+  #imagenSobre {
+    height: 10vh;
+  }
+  #imagenSobre img {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 0px) {
+  /*----------FOOTER----------*/
+  #logoFooter {
+    margin-bottom: 3vh;
+  }
+  #logoFooter img {
+    height: 7vh;
+  }
+  #redesSociales a {
+    padding: 0%;
+  }
+  #redesSociales img {
+    height: 4vh;
+  }
+  #enlaces a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /*----------FOOTER----------*/
+  #logoFooter img {
+    height: 12vh;
+  }
+  #redesSociales img {
+    height: 6vh;
+  }
+  #enlaces a {
+    margin-bottom: 4vh;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /*--------FOOTER----------*/
+  #enlaces a {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  #enlaces a:hover {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+  }
+}
+
+@media only screen and (min-width: 0px) {
+  /*Carrusel*/
+  #carrusel {
+    width: 100%;
+    margin-bottom: 5vh;
+  }
+  #carrusel img {
+    width: 100%;
+  }
+  /*Proyectos destacados*/
+  #proyectos {
+    margin-bottom: 5vh;
+  }
+  #proyectos article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  /*Mapa y proyecto*/
+  #ubicacionProyecto {
+    margin: 0%;
+    margin-bottom: 5vh;
+  }
+  /*Mandar proyectos*/
+  #mandaProyecto {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vh;
+    text-align: left;
+  }
+  #mandaProyecto form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #mandaProyecto div {
+    margin-bottom: 2%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #limpiarProyecto {
+    width: 30%;
+  }
+  #limpiarProyecto input {
+    width: 100%;
+  }
+  #enviarProyecto {
+    width: 30%;
+  }
+  #enviarProyecto input {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 0px) {
+  #tienda {
+    margin-bottom: 5vh;
+  }
+  #tienda img {
+    width: 100%;
+  }
+  #tienda .producto {
+    border: 1px solid #FF6D00;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    padding: 20px;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 0px) {
+  #listaProyectos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 5vh;
+  }
+  #acordeonProyectos {
+    text-align: left;
+    width: 80%;
+  }
+  #acordeonProyectos .card {
+    border-color: #26323800;
+    border-radius: 10px;
+    background-color: #26323800;
+  }
+  #acordeonProyectos .card-header {
+    background-color: #FF6D00;
+    border-color: #FF6D00;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #acordeonProyectos .card-header .card-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #acordeonProyectos a {
+    color: #263238;
+  }
+  #listaProyectos ol li {
+    list-style: none;
+  }
+}
+
+@media only screen and (min-width: 0px) {
+  #descripcion {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vh;
+    text-align: left;
+    display: block;
+  }
+  #descripcion p {
+    margin-bottom: 2vh;
+  }
+  #imagenChica {
+    display: none;
+  }
+  #imagenGrande {
+    width: 100%;
+  }
+  #tutorial {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vh;
+  }
+  #tutorial iframe {
+    width: 100%;
+  }
+  #listaComponentes {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vh;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #descripcion p, #listaComponentes li {
+    font-size: 4vh;
+  }
+  #imagenChica {
+    display: block;
+    float: left;
+    padding: 2%;
+    width: 45%;
+  }
+  #imagenGrande {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 0px) {
+  #contactoRedes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vh;
+    text-align: left;
+  }
+  #contactoRedes p {
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+    margin-bottom: 2vh;
+    width: 100%;
+  }
+  #contactoRedes img {
+    height: 5vh;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 0px) {
+  #formContacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+    margin-bottom: 5%;
+  }
+  #formContacto form {
+    width: 80%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  #formContacto textarea {
+    border-radius: 10px;
+    padding: 2%;
+    width: 100%;
+  }
+  #formContacto form label, #formContacto form select, #formContacto form p, #formContacto form textarea, #formContacto form input {
+    margin: 0%;
+  }
+  #formContacto .form-check-input {
+    margin-left: 10px;
+    height: 100%;
+  }
+  #formContacto .btn-primary {
+    background-color: #FF6D00;
+    border-color: #FF6D00;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #formContacto form {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 0px) {
+  #texto {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vh;
+    text-align: left;
+  }
+  #texto img {
+    width: 100%;
+    margin-top: 2vh;
+  }
 }

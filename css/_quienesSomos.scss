@@ -1,0 +1,20 @@
+@media only screen and (min-width: 0px) {
+    #contactoRedes {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3vh;
+        text-align: left;
+        p {
+            align-self: stretch;
+            margin-bottom: 2vh;
+            width: 100%;
+        }
+        img {
+            height: 5vh;
+            margin-right: 10px;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@media only screen and (min-width: 0px) {
+    /*----------FOOTER----------*/
+
+    #logoFooter {
+        margin-bottom: 3vh;
+        img {
+            height: 7vh;
+        }
+    }
+
+    #redesSociales {
+        a {
+            padding: 0%;
+        }
+        img {
+            height: 4vh;
+        }
+    }
+
+    #enlaces a {
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /*----------FOOTER----------*/
+
+    #logoFooter img {
+        height: 12vh;
+    }
+
+    #redesSociales img {
+        height: 6vh;
+    }
+
+    #enlaces a {
+        margin-bottom: 4vh;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /*--------FOOTER----------*/
+
+    #enlaces {
+        a {
+            transition: all 1s;
+        }
+        a:hover {
+            transform: scale(1.5, 1.5);
+        }
+    }
+}

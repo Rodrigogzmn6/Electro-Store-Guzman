@@ -1,0 +1,60 @@
+@media only screen and (min-width: 0px) {
+    #logo img{
+        height: 7vh;
+    }
+
+    #barraNavegacion {
+        background-color: #FF6D00;
+        li a {
+            color: white;
+            text-align: left;
+        }
+    }
+
+    #busquedaFija {
+        display: none;
+    }
+
+    #busquedaFija button, #busquedaColapsable button {
+        background-color: #263238;
+        border-color: #FF6D00;
+        color: #FF6D00;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-expand-lg {
+        justify-content: space-between;
+    }
+
+    #busquedaFija {
+        display: block;
+    }
+
+    #busquedaColapsable {
+        display: none;
+    }
+
+    #collapsibleNavbar {
+        flex-grow: 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    /*--------HEADER----------*/
+
+    #collapsibleNavbar {
+        a {
+            margin: 0px 0.5vw;
+            transition: all 1s;
+        }
+        a:hover {
+            transform: scale(1.5, 1.5);
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    
+}
