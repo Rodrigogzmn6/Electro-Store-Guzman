@@ -5,7 +5,7 @@
             width: 100%;
         }
         .producto {
-            border: 1px solid #FF6D00;
+            border: 1px solid map-get($map: $colores, $key: "secundario");
             border-radius: 10px;
             display: flex;
             flex-direction: column;

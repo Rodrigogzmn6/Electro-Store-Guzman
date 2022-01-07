@@ -6,6 +6,12 @@ FUENTES
 'Noto Sans', sans-serif;
 */
 
+$colores: (
+    principal: #263238,
+    texto: white,
+    secundario: #FF6D00,
+);
+
 
 
 * {
@@ -15,23 +21,23 @@ FUENTES
 }
 
 body {
-    background-color: #263238;
+    background-color: map-get($map: $colores, $key: "principal");
     font-family: 'Noto Sans', sans-serif;
     background-image: url(../img/bipolar.png);
     background-size: 10vh;
-    color: white;
+    color: map-get($map: $colores, $key: "texto");
     text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
     font-family: 'MuseoModerno', cursive;
-    color: #FF6D00;
+    color: map-get($map: $colores, $key: "secundario");
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: map-get($map: $colores, $key: "texto");
 }
 
 @import "_header";
