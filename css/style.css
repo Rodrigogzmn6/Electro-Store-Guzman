@@ -85,7 +85,6 @@ a {
 }
 
 @media only screen and (min-width: 0px) {
-  /*----------NEWSLETTER----------*/
   #newsletter {
     background-color: #FF6D00;
     border-radius: 15px;
@@ -193,7 +192,7 @@ a {
     margin-bottom: 3vh;
     text-align: left;
   }
-  #mandaProyecto form {
+  #mandaProyecto form .formProyecto, #mandaProyecto form div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -204,24 +203,11 @@ a {
   }
   #mandaProyecto div {
     margin-bottom: 2%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
-  #limpiarProyecto {
+  #limpiarProyecto, #enviarProyecto {
     width: 30%;
   }
-  #limpiarProyecto input {
-    width: 100%;
-  }
-  #enviarProyecto {
-    width: 30%;
-  }
-  #enviarProyecto input {
+  #limpiarProyecto input, #enviarProyecto input {
     width: 100%;
   }
 }
@@ -324,20 +310,16 @@ a {
   #imagenGrande {
     width: 100%;
   }
-  #tutorial {
+  .tutorial, #listaComponentes {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3vh;
   }
-  #tutorial iframe {
+  .tutorial iframe, #listaComponentes iframe {
     width: 100%;
   }
   #listaComponentes {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3vh;
     text-align: left;
   }
 }

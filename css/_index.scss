@@ -16,9 +16,7 @@
     #proyectos {
         margin-bottom: 5vh;
         article {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            @include flex-col-sb;
         }
     }
 
@@ -41,25 +39,17 @@
         margin-right: auto;
         margin-bottom: 3vh;
         text-align: left;
-        form {
+        form .formProyecto {
             display: flex;
             flex-direction: column;
         }
         div {
+            @extend .formProyecto;
             margin-bottom: 2%;
-            display: flex;
-            flex-direction: column;
         }
     }
 
-    #limpiarProyecto {
-        width: 30%;
-        input{
-            width: 100%;
-        }
-    }
-
-    #enviarProyecto {
+    #limpiarProyecto, #enviarProyecto {
         width: 30%;
         input{
             width: 100%;
