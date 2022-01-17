@@ -3,6 +3,8 @@
         margin-bottom: 5vh;
         img {
             width: 100%;
+            background-color: #FF6D00CC;
+            border-radius: 10px;
         }
         .producto {
             border: 1px solid map-get($map: $colores, $key: "secundario");
