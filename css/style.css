@@ -204,11 +204,25 @@ a {
   #mandaProyecto div {
     margin-bottom: 2%;
   }
+  #mandaProyecto input, #mandaProyecto textarea {
+    border-radius: 10px;
+    padding: 1%;
+  }
   #limpiarProyecto, #enviarProyecto {
     width: 30%;
   }
   #limpiarProyecto input, #enviarProyecto input {
     width: 100%;
+  }
+  #limpiarProyecto input {
+    color: white;
+    background-color: #4F5B62;
+    border-color: #4F5B62;
+  }
+  #enviarProyecto input {
+    color: white;
+    background-color: #FF6D00;
+    border-color: #FF6D00;
   }
 }
 
